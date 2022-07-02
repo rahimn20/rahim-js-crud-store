@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+    <title>Crud Operation</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0a7d297815.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="onFormSubmit()">
+                   <center>
+                    <h1 class="heading">Store Manager</h1>
+                    <div>
+                        <input class="text-field" required type="text" name="productCode" id="productCode" placeholder="Product Code">
+                    </div>
+                    <div>
+                        <input class="text-field" required type="text" name="product" id="product" placeholder="Product Name">
+                    </div>
+                    <div>
+                        <input class="text-field" required type="number" name="qty" id="qty" placeholder="Quantity">
+                    </div>
+                    <div>
+                        <input class="text-field" required type="number" name="perPrice" id="perPrice" placeholder="Price">
+                    </div>
+
+                    <div class="form_action--button">
+
+                        <button class="glow-on-hover" type="submit" value="Submit" style="margin-right: 20px;">Submit</button>
+
+                        <!-- <input type="submit" value="Submit"> -->
+                        <input type="reset" value="Reset">
+                    </div>
+                </center>
+                </form>
+
+                <td>
+                    <table class="list" id="storeList">
+                        <thead>
+                            <tr>
+                                <th class="thead">Product Code</th>
+                                <th class="thead">Product Name</th>
+                                <th class="thead">Qty</th>
+                                <th class="thead">Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </td>
+            </td>
+        </tr>
+    </table>
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+</html>
